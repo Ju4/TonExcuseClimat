@@ -14,6 +14,7 @@ nav {
 }
 nav img {
   width: 260px;
+  height: 260px;
 }
 footer {
   padding: 16px;
@@ -51,7 +52,10 @@ li {
 }
 .card_illu {
   height: 32px;
+  width: 32px;
   margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card_detail {
   text-align: left;
