@@ -1,0 +1,17 @@
+<div class="card_title">{{ include.title }}</div>
+<div class="card_content">
+  {% if include.quotes %}
+    <div class="card_subtitle">
+      {% assign quote_list = include.quotes | split: " & " %}
+      {% for quote in quote_list %}
+        <p class="subtitle_item">"{{ quote }}"</p>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if include.illustration %}
+    <img class="card_illu" src="{{ '/assets/images/location.svg' | replace: 'location', include.illustration | relative_url }}" aria-hidden="true" alt="Illustration de l'excuse">
+  {% endif %}
+  {% if include.content %}
+    <div class="card_detail">{{ include.content }}</div>
+  {% endif %}
+</div>

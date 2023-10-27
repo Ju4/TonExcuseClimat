@@ -1,0 +1,80 @@
+body {
+  color: $text-color;
+  background: linear-gradient(0deg, $gradient-color-1 0%, $gradient-color-2 100%);
+  background-attachment: fixed;
+  padding: 32px;
+  margin: 0;
+}
+a {
+  color: $text-color;
+}
+nav {
+  margin-bottom: 32px;
+  text-align:center;
+}
+nav img {
+  width: 260px;
+}
+footer {
+  padding: 16px;
+  text-align:center;
+}
+li {
+  padding-bottom: 16px;
+}
+.card {
+  background-color: $back-color;
+  border-radius: 8px;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+}
+.card > * {
+  padding: 32px;
+}
+.card_title {
+  color: $back-color;
+  background-color: $text-color;
+  font-weight: 200;
+  font-size: large;
+}
+.card_content {
+  flex-grow: 1;
+  display:flex;
+  flex-direction: column;
+}
+.card_subtitle {
+  font-style: italic;
+  font-size: medium;
+  margin-bottom: 32px;
+}
+.card_illu {
+  height: 32px;
+  margin-top: auto;
+}
+.card_detail {
+  text-align: left;
+}
+.card-l {
+  .card_title {
+    font-size: xx-large;
+  }
+  .card_subtitle {
+    font-size: x-large;
+  }
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+  margin-top: 32px;
+}
+.list_item {
+  text-decoration: none;
+  min-width: 280px;
+  flex: 1;
+  flex-grow: 1;
+}

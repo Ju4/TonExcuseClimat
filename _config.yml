@@ -1,0 +1,27 @@
+title: Les 12 discours de l'inaction
+email: contact@ju4.fr
+description: >-
+  Les 12 discours de l'inaction climatique et comment y répondre
+baseurl: "/TonExcuseClimat"
+url: "https://ju4.fr"
+
+collections:
+  excuses:
+    output: true
+
+defaults:
+  - scope:
+      path: "index"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

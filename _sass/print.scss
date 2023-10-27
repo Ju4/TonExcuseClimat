@@ -1,0 +1,10 @@
+body {
+  font-family: Serif;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color: $text-color;
+}
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") ";
+}

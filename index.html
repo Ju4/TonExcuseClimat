@@ -1,0 +1,12 @@
+---
+title: Accueil
+---
+
+<div class="list">
+  {% assign excuses = site.excuses | sort: 'index' %}
+  {% for excuse in excuses %}
+    <a class="list_item card card-s" href="{{ excuse.url | relative_url }}" alt="Accéder à la page : {{excuse.title}}">
+      {% include card.html title=excuse.title quotes=excuse.description illustration=excuse.illustration %}
+    </a>
+  {% endfor %}
+</div>
